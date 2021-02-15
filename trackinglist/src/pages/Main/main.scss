@@ -1,0 +1,141 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    // position: fixed;
+  }
+  @media (min-width: 768px) {
+    // align-items: center;
+  }
+}
+
+.inform {
+  padding-left: 30px;
+  @media (max-width: 768px) {
+  }
+  @media (min-width: 768px) {
+  padding: 30px 0 ;
+  }
+}
+
+.filtercont{
+  display: flex;
+  // position: relative;
+  padding-bottom: 30px;
+  // flex-direction: row;
+  // justify-content: left;
+  // align-items: center;
+  // gap: 15px;
+}
+
+.filterBtn{
+  border: none;
+  min-width: 85px;
+  height: 26px;
+  max-width: 85px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #C4C4C473;
+  color: #00000073;
+}
+.filterBtn:hover{
+  color: #fff;
+  background-color: #4DC2A6;
+  cursor: pointer;
+  filter: brightness(85%);
+  transition: 300ms ease-in-out;
+}
+// .filterBtn{
+  
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 12px;
+//   font-weight: bold;
+//   filter: brightness(1);
+//   :hover {
+//       cursor: pointer;
+//       filter: brightness(85%);
+//       transition: 300ms ease-in-out;
+//   }
+// }
+
+
+
+.alert{
+  // width: ;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  // box-shadow: "1px 3px 1px #9E9E9E";
+}
+
+.mediconts {
+  display: flex;
+  position: relative;
+  left: 20px;
+  flex-direction: row;
+  gap: 30px;
+  width: 70%;
+  height: 70%;
+  @media (max-width: 768px) {
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+    height:auto;
+    left:0;
+  }
+}
+
+.firstMedicont, .secondMedicont, .thirdMedicont {
+  position: relative;
+  padding: 10px 0 25px 0;
+  border-radius: 25px;
+  min-width: 345px;
+  max-width: 450px;
+  height: 520px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 768px) {
+    height:auto;
+    width:90%;
+  }
+}
+.firstMedicont {
+  background-color: #d2e0e9;
+}
+
+.secondMedicont {
+  background-color: #faf2df;
+}
+
+.thirdMedicont {
+  background-color: #dffaed;
+  margin-bottom:5vh;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.form {
+  position:fixed;
+  bottom:0;
+  margin-bottom:1vh;
+}
