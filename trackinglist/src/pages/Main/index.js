@@ -6,11 +6,6 @@ import Form from "comps/Form";
 import Inform from "comps/Inform";
 import MediCard from "comps/Medicard";
 
-import { MdPermDeviceInformation } from "react-icons/md";
-
-import Countdown from 'comps/Countdown';
-
-
 const Main = ({}) => {
 
   const ref = useRef(null);
@@ -153,9 +148,9 @@ const Main = ({}) => {
               {/* </span> */}
             {/* <button style={{marginRight:"20px"}} className="filterBtn" onClick={handleTime}>By Time</button>
             <button className="filterBtn" onClick={handleName}>By Name</button> */}
-          {/* <div className="alert">
+          <div className="alert">
             <Alert ref={ref} />
-          </div> */}
+          </div>
           </div>
           </div>
     

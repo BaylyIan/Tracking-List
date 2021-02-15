@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {MdDone, MdAdd} from "react-icons/md";
 
 const Container = styled.div`
     padding: 10px;

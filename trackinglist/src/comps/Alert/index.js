@@ -1,11 +1,6 @@
 import React, { useState, forwardRef, useImperativeHandle } from "react";
-import styled from "styled-components";
-import BigButton from "comps/BigButton";
 
 import { MdAlarm } from "react-icons/md";
-import { MdCheck } from "react-icons/md";
-import { MdDone, MdAdd } from "react-icons/md";
-
 import styles from "./alert.module.scss";
 
 // const AlertMsgCont = styled.div`

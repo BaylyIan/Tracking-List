@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { MdAlarm } from "react-icons/md";
 import { FaTrash } from "react-icons/fa";
-
-
-const axios = require('axios')
 
 const Container = styled.div`
   display: flex;
