@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from 'styled-components';
 import { AiOutlinePlus } from 'react-icons/ai';
 import {IoIosArrowDown} from 'react-icons/io';
-import TimePicker from 'react-time-picker';
 import "react-time-picker/dist/TimePicker.css";
 
 const Container = styled.div`

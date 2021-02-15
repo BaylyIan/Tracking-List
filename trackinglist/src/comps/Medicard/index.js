@@ -106,20 +106,12 @@ const ButtonCont = styled.div`
   }
 `;
 
-const MediCard =({id, mediname, dosage, time, bgcolor, btcolor, cardcolor, hovercolor}) => {
+const MediCard =({mediname, dosage, time, bgcolor, btcolor, cardcolor, hovercolor}) => {
 
   const medications = [
     {}
   ];
-{/*
-  const HandleMedDelete = (id) => {
-    axios.delete("https://medication-list-backend.herokuapp.com/api/medications", { medicineId: id }).then(res => {
-      this.setState({
-        id: this.state.id
-      })
-    })
-  }
-*/}
+
   return (
     <Container bgcolor={bgcolor}>
       {medications.map(o=><div style={{display:"flex", flexDirection:"row", padding:"15px"}}>

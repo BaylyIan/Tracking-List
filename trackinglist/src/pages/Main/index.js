@@ -6,7 +6,7 @@ import Form from "comps/Form";
 import Inform from "comps/Inform";
 import MediCard from "comps/Medicard";
 
-const Main = ({}) => {
+const Main = () => {
 
   const ref = useRef(null);
 
@@ -39,7 +39,7 @@ const Main = ({}) => {
     const interval = setInterval(() => {
       for (let i = 0; i < medications.length; i++) {
         const medication = medications[i];
-        if (medication.time.replace(":", "") == current_time) {
+        if (medication.time.replace(":", "") === current_time) {
           handleAlert();
         } 
       }
