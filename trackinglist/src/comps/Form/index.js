@@ -89,7 +89,6 @@ const Close = styled.div`
     display:flex;
     justify-content:space-evenly;
     align-items:center;
-    background-color:${props => props.bgcolor ? "#E6E6E6" : "none"};
     border-radius:12px;
     :hover {
         cursor: pointer;
@@ -114,7 +113,6 @@ const Form = ({ buttonText, onFormComplete, onFormClose }) => {
     const [display1, setDisplay1] = useState(true);
     const [display2, setDisplay2] = useState(true);
     const [display3, setDisplay3] = useState(true);
-    const [bgcolor, setBgcolor] = useState(true);
 
     const [mediname, setMediname] = useState("");
     const [dosage, setDosage] = useState("");
@@ -125,11 +123,10 @@ const Form = ({ buttonText, onFormComplete, onFormClose }) => {
         setDisplay1(!display1);
         setDisplay2(!display2);
         setDisplay3(!display3);
-        setBgcolor(!bgcolor);
     }
 
     return <Container >
-        <Close onClick={handleExpand} bgcolor={bgcolor}>
+        <Close onClick={handleExpand}>
             <Title display1={display1}><h3>Add Medication</h3></Title>
             <Icon1 display2={display2}><AiOutlinePlus size={25} /></Icon1>
             <Icon2 display3={display3}><IoIosArrowDown size={35} /></Icon2>
